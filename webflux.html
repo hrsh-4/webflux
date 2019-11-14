@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webflux</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <a href="">
+                <img class="logo" src="images/logo.svg" alt="mylogo">
+            </a>
+
+            <nav>
+                <a href="" class="hide-desktop">
+                    <img class="menu" id='menu' src="images/ham.svg" alt="toggle-menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id='nav'>
+
+                    <li><a href=""><img id='exit' class="exit-btn hide-desktop" src="images/exit.svg" alt="exit"></a>
+                    </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Social Media</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img class="server" src="images/server.svg" alt="server">
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="sub-head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, animi doloribus facilis,
+                accusantium in pariatur eveniet excepturi eos, officia ipsa corporis similique laboriosam maxime enim.
+                Ipsa nam nihil reiciendis facere.</p>
+                <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calander">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem commodi corrupti delectus quis.
+                        Dolorem iure saepe aliquam nostrum excepturi soluta quidem laudantium magni vel rerum, ratione
+                        est, esse, aliquid placeat?</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="wallet">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis perferendis ullam nihil eaque enim
+                        dicta amet autem facere, eum, dignissimos deleniti. Assumenda cupiditate voluptas ducimus eaque
+                        amet hic nemo eos!</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="phone">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum reiciendis quam rerum corporis
+                        nam eveniet. Iure tempora laboriosam nobis earum animi deserunt, eius quis, mollitia, minus
+                        aperiam atque explicabo!</p>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user1">
+                        <blockquote>" The developer of this website has got some amazing skills."</blockquote>
+                        <figcaption>-Hannah</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user2">
+                        <blockquote>" You are visiting an amazing website. "</blockquote>
+                        <figcaption>-John</figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now!!!</h2>
+        <a href="" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href=""><img class="logo" src="images/logo-white.svg" alt="white logo"></a>
+                <p class="address">Indore, Madhya Pradesh <br>INDIA</p>
+                <ul class="footer-links">
+                    <li><a class="footer-a" href="">Terms of Servcies</a></li>
+                    <li><a class="footer-a" href="">Privacy & Policy</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+        <script>
+            
+            var menu = document.getElementById('menu');
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+
+            menu.addEventListener('click',function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            })
+
+            exit.addEventListener('click',function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault()
+            })
+            
+        </script>
+
+
+
+</body>
+
+
+
+</html>
